@@ -140,6 +140,26 @@ h1 {
     display: none;
 }
 
+.hidden2 {
+    display: none;
+}
+.loss {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    color: #fa0404;
+}
+.loss span {
+    font-size: 2em;
+    font-family: 'Press Start 2P', cursive;
+    animation: rolly 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes rolly {
+    0%,40%,100% {transform: translateY(0);}
+    20% {transform: translateY(-20px);}
+}
+
 /* Our Crew */
 
 :root {
