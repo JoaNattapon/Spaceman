@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Red+Hat+Display&display=swap');
+
+body {
+    background-color: rgb(4, 4, 69);
+}
+h1 {
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+.head {
+    align-items: center;
+    margin-top: 110px;
+}
+.chance {
+    color: aliceblue;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 100px;
+    text-align: right;
+    padding-right: 110px;
+    position: sticky;
+}
+.restart {
+    color: aliceblue;
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgb(4, 4, 69);
+    padding: 13px 20px;
+    border-radius: 15%;
+    border-color: aliceblue;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.putbtn :hover {
+    background-color: aliceblue;
+    color: rgb(6, 6, 242);
+}
+.putbtn {
+    text-align: right;
+    padding-right: 150px;
+    margin-top: 35px;
+    position: sticky;
+}
+.placing {
+    margin-top: 65px;
+    margin-left: 35%;
+    position: sticky
+}
+.letter {
+    height: 40px;
+    width: 55px;
+    margin-left: 45px;
+    text-align: center;
+}
+.first {
+    border-bottom: 5px solid rgb(15, 162, 15) ;
+    float: left;
+}
+.second {
+    border-bottom: 5px solid rgb(171, 22, 176) ;
+    float: left;
+}
+.third {
+    border-bottom: 5px solid rgb(67, 186, 207) ;
+    float: left;
+}
+.fourth {
+    border-bottom: 5px solid rgb(248, 244, 3) ;
+    float: left;
+}
+
+#one,#two,#three,#fourth {
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 2.5em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.congrat {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.congrat span {
+    font-size: 2em;
+    font-family: 'Press Start 2P', cursive;
+    animation: rolly 1s infinite;
+    animation-delay: calc(.3s * var(--i));
+}
+@keyframes rolly {
+    0%,40%,100% {transform: translateY(0);}
+    20% {transform: translateY(-20px);}
+}
+
+.sone {
+    color: rgb(198, 251, 5);
+}
+.stwo {
+    color: rgb(250, 152, 5);
+}
+.sthree {
+    color: rgb(5, 72, 38);
+}
+.sfour {
+    color: blueviolet;
+}
+.sfive {
+    color: rgb(248, 2, 211);
+}
+.ssix {
+    color: rgb(2, 213, 255);
+}
+.sseven {
+    color: brown;
+}
+.seight {
+    color: rgb(56, 215, 175);
+}
+.snine {
+    color: rgb(167, 248, 5);
+}
+.sten {
+    color: aqua;
+}
+.seleven {
+    color: rgb(87, 52, 6);
+}
+.stwl {
+    color: rgb(105, 181, 86);
+}
+.sthir {
+    color: blueviolet;
+}
+.sfourt {
+    color: rgb(5, 218, 79);
+}
+.sfivt {
+    color: rgb(248, 252, 4);
+}
+.hidden {
+    display: none;
+}
+
+/* Our Crew */
+
+:root {
+    --base-color-1: #94e6e5;
+    --base-color-2: #0d0d0d;
+    --lighter-base-color-1: #faf8f8;
+    --lighter-base-color-2: #242020;
+    --face-color: #73989e;
+    --lighter-face-color: #CAE8ED;
+    --border-color: #000000; 
+}
+.amongus {
+    height: 210px;
+    width: 340px;
+    margin-left: 50px;
+    margin-top: 180px;
+    animation: rolly 1s infinite;
+    animation-delay: calc(.3s * var(--i));
+}
+@keyframes among {
+    0%,40%,100% {transform: translateY(0);}
+    20% {transform: translateY(-20px);}
+}
+.face{ 
+    position: absolute;
+    right: -15px;
+    top: 10px;
+    z-index: 2;
+    
+    background-color: var(--face-color);
+    width: 65px;
+    height: 45px;
+    transform: rotate(-4deg);
+  
+    border: 10px solid var(--border-color);
+    border-radius: 70px 90px 110px 110px;
+}
+  
+  .face-light-part {
+    position: relative;
+    width: 47px;
+    height: 25px;
+    margin: 0px 12px;
+    background-color: var(--lighter-face-color);
+    border-radius: 30% 40% 55% 50%;
+    display: inline-block;
+  }
+  
+  .shimmer {
+    position: relative;
+    margin: 4px 1px 4px 12px;
+    width: 25px;
+    height: 13px;
+    background-color: white;
+    border-radius: 40% 50% 50% 40%;
+  }
+  
+  .backpack-light-part {
+    margin-left: 2px;
+    height: 12.5px;
+    width: calc(100% - 2px);
+    
+    background-color: var(--lighter-base-color);
+    
+    border-radius: 50% 0 0 20%;
+  }
+
+  .red-crew {
+    position: absolute;
+    margin: 25px 105px;
+    width: 80px;
+    height: 115px;
+    background-color: var(--base-color-1);
+    transform: rotate(0deg);
+    border: 10px solid var(--border-color);
+    border-radius: 70px 85px 70px 70px;
+  }
+  
+  
+  .body-light-part-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    
+    width: 95%;
+    height: 90%;
+    background-color: var(--lighter-base-color-1);
+    transform: rotate(-2deg);
+    border-radius: 40% 50% 36% 30%;
+  }
+  
+  .backpack-1{
+    position: absolute;
+    left: -1px;
+    top: 30px;
+    width: 20px;
+    height: 65px;
+    transform: translate(-100%);
+    
+    background-color: var(--base-color-1);
+    border: 10px solid var(--border-color);
+    border-radius: 40% 0 0 50%;
+  }
+  
+  .leg-left-under-1 {
+    position: absolute;
+    bottom: 0;
+    left: -12px;
+    
+    width: 70px;
+    height: 60px;
+    
+    background-color: var(--base-color-1);
+    border-left: 12px solid var(--border-color);
+  }
+  
+  .leg-left-1 {
+    position: absolute;
+    bottom: 18px;
+    left: -9px;
+    
+    width: 32.5px;
+    height: 28px;
+    transform: translateY(55px);
+    
+    background-color: var(--base-color-1);
+    border: 10px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 40% 60%;
+  }
+  
+  .leg-right-under-1 {
+    position: absolute;
+    bottom: 2px;
+    left: 47px;
+    
+    width: 30px;
+    height: 16px;
+    
+    background-color: var(--base-color-1);
+    border-right: 10px solid var(--border-color);
+  }
+  
+  .leg-right-1 {
+    position: absolute;
+    bottom: -33px;
+    left: 37px;
+    
+    width: 30px;
+    height: 25px;
+    
+    background-color: var(--base-color-1);
+    border: 10px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 0 40% 60%;
+  }
