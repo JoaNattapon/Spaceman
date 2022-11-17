@@ -18,6 +18,7 @@ let putTwo = document.querySelector('#two')
 let putThree = document.querySelector('#three')
 let putFour = document.querySelector('#fourth')
 let congrat = document.querySelector('.hidden')
+let loss = document.querySelector('.hidden2')
 let guessingWord = []
 let countForWin = 0
 let countForLoss = 8
@@ -52,7 +53,7 @@ let keyEvent = document.addEventListener("keypress", onEvent = (event) => {
                         countForLoss--
                         chanceLeft.textContent = `Chance left : ${countForLoss}`
                         if(countForLoss === 0) {
-                            alert('You loss the game !')
+                            loss.classList.remove('hidden2')
                         }
                     }
 
@@ -75,6 +76,7 @@ reStart = () => {
     console.log(myWord)
 
     congrat.classList.add('hidden')
+    loss.classList.add('hidden2')
     let keyEvent = document.addEventListener("keypress", onEvent = (event) => {
                      
         console.log(event.key)
@@ -97,14 +99,14 @@ reStart = () => {
             }
 
             if(guessingWord.length === 4  ) {
-                alert('You win >0<')
+                congrat.classList.remove('hidden')
             }
 
         }else {
             this.countForLoss--
             chanceLeft.textContent = `Chance left : ${countForLoss}`
             if(countForLoss === 0) {
-                alert('You loss the game !')
+                loss.classList.remove('hidden2')
             }
         }
 
